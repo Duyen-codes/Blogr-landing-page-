@@ -44,14 +44,14 @@ a.btn {
     border-radius: 2.5rem;
 }
 
-h3, h4 {
-    color: hsl(208, 49%, 24%);
-}
-
 h1 {
     font-family: var(--ff-Overpass);
     font-weight: 600;
     font-size: 4rem;
+}
+
+h3, h4 {
+    color: hsl(208, 49%, 24%);
 }
 
 h2 {
@@ -135,8 +135,6 @@ header {
     color:tomato;
     font-weight: 700;
 }
-
-
 
 .learn-btn {
     margin-left: 2rem; 
@@ -233,11 +231,11 @@ nav a {
 .arrow-icon {
     transition: all .2s;
 }
-/* Toggle arrow icon  */
-.nav-link.active .arrow-icon {
+
+/* Add JS to rotate arrow icon  */
+.nav-item.active .arrow-icon {
     transform: rotate(180deg);
 }
-
 /* Main  */
 main {
     text-align: center;
@@ -266,13 +264,25 @@ main {
 .art-container {
     margin: 3rem auto 5rem;
     border-radius: 0 10rem 0 10rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     justify-content: center;
+    align-items: center;
     background: url('./images/bg-pattern-circles.svg'), hsl(237, 17%, 21%);
     background-repeat: no-repeat;
     background-position: bottom center;
+}
+
+.phones-img-container {
+    grid-column: 1 / 2;
+    position: relative;
+}
+
+.phones-img-container img {
+    position: absolute;
+    width: 40rem;
+    transform: translateY(-17rem);
 }
 
 .art-content {
@@ -393,6 +403,7 @@ footer ul {
         padding-right: 5vw;
         background-position: bottom left;
         max-height: 400px;
+        justify-content: center;
     }
 
     .art-container > * {

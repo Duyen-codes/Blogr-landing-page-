@@ -1,3 +1,13 @@
+
+// Arrow icon rotates on navlink click 
+
+const navItem = document.querySelector('.nav-item')
+const arrowIcon = document.querySelector('.arrow-icon')
+navItem.addEventListener('click', () => {
+    navItem.classList.toggle('active');
+    console.log('clicked')
+})
+
 const burgerIcon = document.querySelector('.burger-icon')
 
 const closeIcon = document.querySelector('.close-icon')
@@ -19,12 +29,3 @@ closeIcon.addEventListener('click', () => {
 
 })
 
-// Arrow icon rotates on navlink click 
-
-const navLink = document.querySelector('.nav-link')
-const arrowIcon = document.querySelector('.arrow-icon')
-navLink.addEventListener('click', () => {
-
-    navLink.classList.toggle('active');
-    console.log('rotate');
-})
