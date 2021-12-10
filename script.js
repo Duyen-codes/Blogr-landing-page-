@@ -6,13 +6,17 @@ const navBar = document.querySelector('.navbar')
 
 burgerIcon.addEventListener('click', () => {
     console.log('clicked')
-    burgerIcon.classList.toggle('open');
-    closeIcon.classList.toggle('open');
-    navBar.classList.toggle('open');
+    burgerIcon.classList.add('open');
+    closeIcon.classList.add('open');
+    navBar.classList.add('open');
 })
 
 closeIcon.addEventListener('click', () => {
     console.log('closed')
+    burgerIcon.classList.remove('open');
+    closeIcon.classList.remove('open');
+    navBar.classList.remove('open');
+
 })
 
 // Arrow icon rotates on navlink click 
