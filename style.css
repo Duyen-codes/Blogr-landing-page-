@@ -112,36 +112,33 @@ header {
     font-size: 1.6rem;
 }
 
-.signup-btn, .start-free-btn {
+.btn-fill {
     background-color: #fff;
     color: tomato;
     font-weight: 700;
 }
 
-.login-btn {
+.btn-fill:hover {
+    background: rgba(255, 255, 255, .3);
+    color: #fff;
+}
+
+.btn-outline {
     color: inherit;
     margin-right: 2rem;
     background: transparent;
     border: 1px solid white;
 }
 
-.signup-btn:hover, .start-free-btn:hover {
-    background: rgba(255, 255, 255, .3);
-    color: #fff;
-}
-
-.learn-btn {
-    border: 1px solid white;
-    background: transparent;
-    color: inherit;
-    font-weight: 700;
-    margin-left: 2rem;
-    
-}
-
-.login-btn:hover, .learn-btn:hover {
+.btn-outline:hover {
     background: #fff;
     color:tomato;
+}
+
+
+
+.learn-btn {
+    margin-left: 2rem; 
 }
 
 .hero-content {
@@ -232,8 +229,11 @@ nav a {
     display: block;
 }
 
+.arrow-icon {
+    transition: all .2s;
+}
 /* Toggle arrow icon  */
-.nav-item.active .arrow-icon {
+.nav-link.active .arrow-icon {
     transform: rotate(180deg);
 }
 
@@ -329,7 +329,7 @@ footer ul {
 }
 /* Desktop  */
 
-@media (min-width: 680px) {
+@media (min-width: 900px) {
 
     /* Header  */
     header {
@@ -340,9 +340,6 @@ footer ul {
         padding: 5rem 5vw 0;
     }
 
-    header {
-       
-   }
     .navbar {
         display: flex;
         align-items: center;

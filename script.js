@@ -21,10 +21,10 @@ closeIcon.addEventListener('click', () => {
 
 // Arrow icon rotates on navlink click 
 
-const navItem = document.querySelector('.nav-item')
+const navLink = document.querySelector('.nav-link')
 const arrowIcon = document.querySelector('.arrow-icon')
-navItem.addEventListener('click', () => {
+navLink.addEventListener('click', () => {
 
-    navItem.classList.toggle('active');
+    navLink.classList.toggle('active');
     console.log('rotate');
 })
