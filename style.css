@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    font-family: var(--ff-Ubuntu);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+:root {
+    --ff-Overpass: 'Overpass', sans-serif;
+    --ff-Ubuntu: 'Ubuntu', sans-serif;
+}
+
+/* Mobile  */
+img {
+    max-width: 100%;
+}
+
+a.btn {
+    padding: 1rem;
+    border-radius: 2.5rem;
+}
+
+h3, h4 {
+    color: hsl(208, 49%, 24%);
+}
+
+h1 {
+    font-family: var(--ff-Overpass);
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-family: var(--ff-Overpass);
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+}
+
+h5 {
+    font-family: var(--ff-Ubuntu);
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+body {
+    margin: 0;
+    font-family: var(--ff-Overpass);
+    font-size: 1.6rem;
+    min-width: 100vw;
+}
+
+p {
+    font-family: var(--ff-Overpass);
+    font-weight: 300;
+}
+
+/* Header  */
+
+header {
+    text-align: center;
+    color: white;
+    padding: 5rem 2rem;
+    border-radius: 0 0 0 10rem;
+    background-image:
+        linear-gradient(to bottom, hsl(13, 100%, 72%), rgba(0,0,255,0.5)),
+        url('./images/bg-pattern-intro-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: left 35% bottom 65%;
+}
+
+.hero-btn-container {
+    padding: 4rem 0;
+}
+
+.signup-btn, .start-free-btn {
+    background-color: #fff;
+    color: tomato;
+    font-weight: 700;
+}
+
+.login-btn {
+    color: inherit;
+}
+
+.signup-btn:hover, .start-free-btn:hover {
+    background: rgba(255, 255, 255, .3);
+    color: #fff;
+}
+
+.learn-btn {
+    border: 1px solid white;
+    color: inherit;
+    font-weight: 700;
+    margin-left: 2rem;
+}
+
+.learn-btn:hover {
+    background: #fff;
+    color:tomato;
+}
+
+.hero-content {
+    padding: 10rem 0;
+}
+
+.hero-text {
+    font-size: 2rem;
+}
+
+/* Nav  */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+}
+
+source {
+    width: 10px;
+    height: 7px;
+}
+
+nav a {
+    color: white;
+}
+
+.navbar-nav a:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    display: none;
+}
+
+/* Adding class open/close on navbar  */
+.navbar.open {
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin: 0 auto;
+    top: 20vh;
+    right: 0;
+    left: 0;
+    width: 90%;
+    background: white;
+    padding: 2rem 0 3rem;
+}
+
+.navbar-nav.open {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-btn-container.open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.signup-btn.open {
+    padding: 1rem 3rem;
+    background: hsl(13, 100%, 72%);
+    color: white;
+}
+
+.navbar.open a {
+    color:hsl(207, 13%, 34%);
+}
+
+.burger-icon.open {
+    display: none;
+}
+
+.close-icon {
+    display: none;
+}
+
+.close-icon.open {
+    display: block;
+}
+
+/* Toggle arrow icon  */
+.nav-item.active .arrow-icon {
+    transform: rotate(180deg);
+}
+
+/* Main  */
+main {
+    text-align: center;
+    padding: 10rem 0;
+}
+
+.main-heading {
+    color: hsl(208, 49%, 24%);
+}
+/* Editor section */
+.editor-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+.editor-container p {
+    color: hsl(207, 13%, 34%);
+}
+
+/* Art section */
+
+.art-container {
+    margin: 3rem auto 5rem;
+    border-radius: 0 10rem 0 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('./images/bg-pattern-circles.svg'),  hsl(237, 23%, 32%);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+.art-content {
+    color: #fff;
+}
+
+/* Why Blogr  */
+
+.whyblogr-container {
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whyblogr-content {
+    color: hsl(207, 13%, 34%);
+}
+/* Footer section  */
+footer {
+    font-family: var(--ff-Ubuntu);
+    background-color:hsl(240, 10%, 16%);
+    color: hsl(240, 2%, 79%);
+    border-radius: 0 10rem 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2;
+    padding: 3rem 0;
+    gap: 2rem;
+}
+
+footer a {
+    color:hsl(240, 2%, 79%);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-heading {
+    font-size: 2rem;
+    color: white;
+}
+/* Desktop  */
+
+@media (min-width: 680px) {
+
+    /* Header  */
+    header {
+        background: hsl(13, 100%, 72%) url(./images/bg-pattern-intro-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: left 30% center;
+        padding: 5rem 5vw 0;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: 2;
+        margin-left: 4rem;
+    }
+
+    .navbar-nav {
+        display: flex;
+        gap: 4rem;
+    }
+
+    .burger-icon {
+        display: none;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+    /* main  */
+
+    /* Editor  */
+    h2 {
+        font-size: 4rem;
+    }
+
+    .editor-container {
+        text-align: center;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding-left: 5vw;
+    }
+
+    .editor-container > * {
+        flex: 1;
+    }
+
+    .editor-content {
+        text-align: left;
+        padding-left: 5rem;
+    }
+
+    /* Art  */
+    .art-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-right: 5vw;
+    }
+
+    .art-container > * {
+        flex: 1;
+    }
+
+    .phones-img {
+        position: relative;
+        top: -80px;
+    }
+
+    .art-content {
+        text-align: left;
+        padding-right: 10rem;
+    }
+        /* Why Bloger  */
+
+    .whyblogr-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-right: 5vw;
+    }
+
+    .whyblogr-container > * {
+        flex: 1;
+    }
+
+    .whyblogr-content {
+        text-align: left;
+    }
+
+    /* Footer  */
+    footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    .footer-component {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
+       align-items: flex-start;
+    }
+
+}
