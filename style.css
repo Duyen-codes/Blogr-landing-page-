@@ -93,15 +93,23 @@ header {
     color: white;
     padding: 5rem 2rem;
     border-radius: 0 0 0 10rem;
-    background-image:
-        linear-gradient(to bottom, hsl(13, 100%, 72%), rgba(0,0,255,0.5)),
-        url('./images/bg-pattern-intro-mobile.svg');
+    background: url(./images/bg-pattern-intro-mobile.svg), linear-gradient(to  bottom right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     background-repeat: no-repeat;
     background-position: left 35% bottom 65%;
 }
 
 .hero-btn-container {
     padding: 4rem 0;
+}
+
+.btn {
+    cursor: pointer;
+    width: 15rem;
+    padding: 1.6rem 0;
+    border-radius: 5rem;
+    outline: none;
+    border: none;
+    font-size: 1.6rem;
 }
 
 .signup-btn, .start-free-btn {
@@ -112,6 +120,9 @@ header {
 
 .login-btn {
     color: inherit;
+    margin-right: 2rem;
+    background: transparent;
+    border: 1px solid white;
 }
 
 .signup-btn:hover, .start-free-btn:hover {
@@ -121,12 +132,14 @@ header {
 
 .learn-btn {
     border: 1px solid white;
+    background: transparent;
     color: inherit;
     font-weight: 700;
     margin-left: 2rem;
+    
 }
 
-.learn-btn:hover {
+.login-btn:hover, .learn-btn:hover {
     background: #fff;
     color:tomato;
 }
@@ -233,6 +246,7 @@ main {
 .main-heading {
     color: hsl(208, 49%, 24%);
 }
+
 /* Editor section */
 .editor-container {
     text-align: center;
@@ -255,9 +269,9 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url('./images/bg-pattern-circles.svg'),  hsl(237, 23%, 32%);
+    background: url('./images/bg-pattern-circles.svg'), hsl(237, 17%, 21%);
     background-repeat: no-repeat;
-    background-position: bottom left;
+    background-position: bottom center;
 }
 
 .art-content {
@@ -265,9 +279,7 @@ main {
 }
 
 /* Why Blogr  */
-
 .whyblogr-container {
- 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -321,12 +333,16 @@ footer ul {
 
     /* Header  */
     header {
-        background: hsl(13, 100%, 72%) url(./images/bg-pattern-intro-desktop.svg);
+        /* background: hsl(13, 100%, 72%) url(./images/bg-pattern-intro-desktop.svg); */
+        background: url(./images/bg-pattern-intro-desktop.svg), linear-gradient(to  bottom right, hsl(13, 100%, 72%) 50%, hsl(353, 100%, 62%));
         background-repeat: no-repeat;
         background-position: left 30% center;
         padding: 5rem 5vw 0;
     }
 
+    header {
+       
+   }
     .navbar {
         display: flex;
         align-items: center;
@@ -377,16 +393,18 @@ footer ul {
         flex-direction: row;
         align-items: center;
         padding-right: 5vw;
+        background-position: bottom left;
+        max-height: 400px;
     }
 
     .art-container > * {
         flex: 1;
     }
 
-    .phones-img {
+    /* .phones-img {
         position: relative;
         top: -80px;
-    }
+    } */
 
     .art-content {
         text-align: left;
