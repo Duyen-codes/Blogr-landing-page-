@@ -133,6 +133,7 @@ header {
 .btn-outline:hover {
     background: #fff;
     color:tomato;
+    font-weight: 700;
 }
 
 
