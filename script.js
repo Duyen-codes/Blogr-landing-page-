@@ -1,31 +1,37 @@
 
 // Arrow icon rotates on navlink click 
 
-const navItem = document.querySelector('.nav-item')
+const navItems = document.querySelectorAll('.nav-item')
+const navLinks = document.querySelectorAll('.nav-link')
 const arrowIcon = document.querySelector('.arrow-icon')
-navItem.addEventListener('click', () => {
-    navItem.classList.toggle('active');
-    console.log('clicked')
-})
-
 const burgerIcon = document.querySelector('.burger-icon')
-
 const closeIcon = document.querySelector('.close-icon')
-
 const navBar = document.querySelector('.navbar')
+const dropdowns = document.querySelectorAll('.dropdown-menu')
 
 burgerIcon.addEventListener('click', () => {
-    console.log('clicked')
     burgerIcon.classList.add('open');
     closeIcon.classList.add('open');
     navBar.classList.add('open');
 })
 
 closeIcon.addEventListener('click', () => {
-    console.log('closed')
     burgerIcon.classList.remove('open');
     closeIcon.classList.remove('open');
     navBar.classList.remove('open');
+})
+
+// Toggle between hiding and showing dropdown menu 
+navItems.forEach(navItem => {
+    navItem.addEventListener('click', (e) => {
+
+        navItems.forEach(navItem => {
+            navItem.classList.remove('active')
+        })
+
+        navItem.classList.toggle('active')
+    });
 
 })
+
 

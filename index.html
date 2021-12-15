@@ -30,25 +30,47 @@
       <!-- Navbar  -->
       <div class="navbar">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="">Product</a>
+          <li class="nav-item"><a class="nav-link" role="button" id="dropdownMenuLink" href="#">Product</a>
             <picture>
-              <source class="arrow-icon" srcset="./images/icon-arrow-light.svg" media="(min-width: 600px)">
+              <source class="arrow-icon" srcset="./images/icon-arrow-light.svg" media="(min-width: 900px)">
               <img src="./images/icon-arrow-dark.svg" alt="">
             </picture>
+            <!-- Product drop down menu  -->
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Overview</a>
+              <a class="dropdown-item" href="#">Pricing</a>
+              <a class="dropdown-item" href="#">Marketplace</a>
+              <a class="dropdown-item" href="#">Features</a>
+              <a class="dropdown-item" href="#">Integrations</a>
+            </div>
           </li>
 
-          <li class="nav-item"><a class="nav-link" href="">Company</a>
+          <li class="nav-item"><a class="nav-link" role="button" id="dropdownMenuLink" href="#">Company</a>
             <picture>
-              <source srcset="./images/icon-arrow-light.svg" media="(min-width: 600px)">
+              <source srcset="./images/icon-arrow-light.svg" media="(min-width: 900px)">
               <img src="./images/icon-arrow-dark.svg" alt="">
             </picture>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">About</a>
+              <a class="dropdown-item" href="#">Team</a>
+              <a class="dropdown-item" href="#">Blog</a>
+              <a class="dropdown-item" href="#">Careers</a>
+            </div>
           </li>
 
-          <li class="nav-item"><a class="nav-link" href="">Connect</a>
+          <li class="nav-item"><a class="nav-link" href="#">Connect</a>
             <picture>
-              <source srcset="./images/icon-arrow-light.svg" media="(min-width: 600px)">
+              <source srcset="./images/icon-arrow-light.svg" media="(min-width: 900px)">
               <img src="./images/icon-arrow-dark.svg" alt="">
             </picture>
+
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Contact</a>
+              <a class="dropdown-item" href="#">Newsletter</a>
+              <a class="dropdown-item" href="#">LinkedIn</a>
+
+            </div>
           </li>
         </ul>
 
@@ -60,27 +82,6 @@
 
       </div>
     </nav>
-
-    <!-- 
-
-    Overview
-    Pricing
-    Marketplace
-    Features
-    Integrations
-
-    
-
-    About
-    Team
-    Blog
-    Careers
-
-    
-
-    Contact
-    Newsletter
-    LinkedIn -->
 
     <!-- Hero content  -->
     <div class="hero-content">
@@ -101,7 +102,7 @@
     <!-- Editor section  -->
     <div class="editor-container">
       <picture aria-hidden="true" class="blogr__picture blogr__picture--right">
-        <source srcset="./images/illustration-editor-desktop.svg" media="(min-width: 600px)" />
+        <source srcset="./images/illustration-editor-desktop.svg" media="(min-width: 900px)" />
         <img src="./images/illustration-editor-mobile.svg" alt="" class="blogr__img blogr__img--right" />
       </picture>
 
@@ -139,7 +140,7 @@
     <div class="whyblogr-container">
       <div>
         <picture>
-          <source srcset="./images/illustration-laptop-desktop.svg" media="(min-width: 600px)">
+          <source srcset="./images/illustration-laptop-desktop.svg" media="(min-width: 900px)">
           <img src="./images/illustration-laptop-mobile.svg" alt="">
         </picture>
       </div>
