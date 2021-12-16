@@ -25,13 +25,14 @@ closeIcon.addEventListener('click', () => {
 navItems.forEach(navItem => {
     navItem.addEventListener('click', (e) => {
 
-        navItems.forEach(navItem => {
-            navItem.classList.remove('active')
-        })
-
+        // navItems.forEach(navItem => {
+        //     navItem.classList.remove('active')
+        // })
         navItem.classList.toggle('active')
     });
 
 })
+
+
 
 
