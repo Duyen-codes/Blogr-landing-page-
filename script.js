@@ -22,24 +22,18 @@ closeIcon.addEventListener("click", () => {
 // Toggle between hiding and showing dropdown menu
 navItems.forEach((navItem) => {
   navItem.addEventListener("click", (e) => {
-    // navItems.forEach(navItem => {
-    //     navItem.classList.remove('active')
-    // })
-    navItem.classList.toggle("active");
+    navItems.forEach(navItem => {
+      navItem.classList.remove('active')
+      e.currentTarget.classList.add("active");
+    })
   });
+
 });
 
 //Close the dropdown if the user clicks outside of it
-
+let dropDowns = document.querySelectorAll(".dropdown-menu");
 window.onclick = function (e) {
-  if (!e.target.matches(".dropdown-menu")) {
-    const dropdowns = document.querySelectorAll(".dropdown-menu");
-    let i;
-    for (i = 0; i < dropdowns.length; i++) {
-      let openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains("active")) {
-        openDropdown.classList.remove("active");
-      }
-    }
+  if (window.innerWidth >= 1200 && !dropDowns.contains(e.target) && !navItems.contains(e.target)) {
+    [dropDowns, navItems].forEach(each => each.classList.remove('active'))
   }
 };
