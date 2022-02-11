@@ -244,6 +244,14 @@ nav a {
 /* Drop-down menu mobile */
 .dropdown-menu {
     display: none;
+    background-color: #ccc;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: max-height 250ms ease;
+    gap: 1rem;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    width: 100%;
 }
 
 .nav-item.active .dropdown-menu{
@@ -263,7 +271,7 @@ nav a {
     transition: transform 0.2s linear;
 }
 .nav-item.active .arrow-icon {
-    transform: rotate(90deg);
+    transform: rotate(180deg);
 }
 /* Main  */
 main {
