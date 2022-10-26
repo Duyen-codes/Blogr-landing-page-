@@ -38,16 +38,7 @@ navItems.forEach((navItem) => {
     if (clickedItemActive) {
       itemDetail.style.display = "none";
     } else {
-      itemDetail.style.display = "flex";
+      itemDetail.style.display = "block";
     }
   });
-});
-
-header.addEventListener("click", (e) => {
-  console.log("header clicked");
-  if (!e.target.classList.contains("nav-link")) {
-    navItems.forEach((navItem) => {
-      navItem.classList.remove("active");
-    });
-  }
 });
