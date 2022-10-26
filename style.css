@@ -268,8 +268,6 @@ nav a {
   width: 100%;
 }
 
-.dropdown-menu.show {
-}
 /* Add JS to rotate arrow icon  */
 .arrow-icon {
   transition: transform 0.2s linear;
